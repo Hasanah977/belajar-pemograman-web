@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7ccfff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f4f8;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #0099ff;
+}
+
+/* Section Portfolio */
+.portfolio {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.portfolio h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.portfolio p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+/* Section for each Portfolio category */
+.portfolio-section {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.portfolio-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #111;
+  text-align: center;
+}
+
+/* Grid layout for images */
+.portfolio-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  max-width: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Aspect ratio for different images */
+.img-4-5 {
+  aspect-ratio: 4 / 5;
+}
+
+.img-9-16 {
+  aspect-ratio: 9 / 16;
+}
+
+.img-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+footer {
+  background: #121212; /* Footer lebih gelap */
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #888; /* Teks footer lebih cerah */
+}

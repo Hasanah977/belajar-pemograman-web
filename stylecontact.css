@@ -1,0 +1,134 @@
+/* Reset dan Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f4f8; /* Warna latar belakang gelap */
+  color: #1e1e1e; /* Teks berwarna terang */
+  line-height: 1.6;
+}
+
+header {
+  background: #121212; /* Warna header lebih gelap */
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: lab(79.69% -12.42 -31.27); /* Warna logo biru terang */
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f0f4f8; /* Teks link berwarna terang */
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7ccfff; /* Hover link berwarna biru */
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #1e1e1e; /* Teks heading berwarna putih */
+}
+
+.contact p {
+  font-size: 18px;
+  color: #1e1e1e; /* Teks deskripsi lebih cerah */
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #2a2a2a; /* Warna latar belakang form gelap */
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.6), -8px -8px 20px rgba(255,255,255,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: #444; /* Warna input gelap */
+  color: #fff; /* Teks input putih */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb; /* Placeholder lebih terang */
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background: #7ccfff; /* Tombol biru terang */
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #7ccfff; /* Tombol biru lebih gelap saat hover */
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+  color: #bbb; /* Teks informasi kontak terang */
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #1e1e1e; /* Heading informasi kontak putih */
+}
+
+.contact-info img {
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.6), -4px -4px 10px rgba(255,255,255,0.1);
+}
+
+footer {
+  background: #121212; /* Footer lebih gelap */
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #888; /* Teks footer lebih cerah */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}

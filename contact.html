@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Hasanah</title>
+    <link rel="stylesheet" href="stylecontact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Hasanah</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h1>Contact Me</h1>
+      <p>Yuk ngobrol atau kerjasama bareng aku!</p>
+
+      <div class="contact-container">
+        <div class="contact-form">
+          <form action="contact.php" method="post">
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Aktif"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Pesan Kamu..."
+              required
+            ></textarea>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Media Sosial</h3>
+          <div class="sosmed">
+            <img src="ig.jpeg" alt="Instagram" />
+            <p>@khazanaprezekc</p>
+          </div>
+          <div class="sosmed">
+            <img src="tiktok.jpeg" alt="TikTok" />
+            <p>@khazanaprezekc</p>
+          </div>
+          <div class="sosmed">
+            <img src="wa.jpeg" alt="WhatsApp" />
+            <p>08xxxxxxxxxx</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Hasanah. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
